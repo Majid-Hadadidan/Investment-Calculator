@@ -14,15 +14,18 @@ function App() {
     setUserInput((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputIdentifier]:+newValue,
+        [inputIdentifier]: +newValue,
       };
     });
   };
+
+  const inputIsValid = userInput.duration >= 1;
   return (
     <>
       <Header />
-      <UserInput onChange={handleChange} userInput={userInput}/>
-      <Result input={userInput} />
+      <UserInput onChange={handleChange} userInput={userInput} />
+      {inputIsValid && <Result input={userInput} />}
+      {!inputIsValid && <p className="center">Please Enter a duraion greater than zero. </p>}
     </>
   );
 }

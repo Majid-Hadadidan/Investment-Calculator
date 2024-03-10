@@ -15,7 +15,7 @@ export default function Result({ input }) {
           <th>Investment Value</th>
           <th>Interest (Year)</th>
           <th>Total Interest</th>
-          <th>Invested Captial</th>
+          <th>Invested Capital</th>
         </tr>
       </thead>
       <tbody>
