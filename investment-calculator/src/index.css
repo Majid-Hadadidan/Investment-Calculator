@@ -62,6 +62,7 @@ body {
   background-color: transparent;
   color: #c2e9e0;
   font-size: 1rem;
+  outline:none;
 }
 
 #result {
